@@ -1,7 +1,7 @@
 const db = require('../../data/db-config')
 
 const getAll = () => {
-  return db('cars')
+  return db('cars').orderBy('car_id', 'desc')
 }
 
 const getById = id => {
